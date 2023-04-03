@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dc{
+    text-align: center;
+}
+
+img{
+    width: calc(100% / 3);
+}
+
+ul{
+
+    list-style: none;
+}

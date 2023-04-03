@@ -30,18 +30,21 @@ const team = [{
 },
 ]
 
-const list = document.querySelector('ul')
+const list = document.querySelector('.cards')
 
 
 for(let i in team ){
     const colleghi = team[i]
     console.log(colleghi);
     console.log(colleghi.firstname);
-    console.log(colleghi.age);
     console.log(colleghi.role);
+    console.log(colleghi.image);
     for(let key in colleghi){
         list.innerHTML += `
-        <li>${key}: ${colleghi[key]}</li>
+        <div>
+        <img src='img/${colleghi.image}'></img>
+        ${colleghi.firstname}<br>
+        ${colleghi.role}</div>
         `
     }
 
