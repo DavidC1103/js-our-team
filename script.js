@@ -32,21 +32,17 @@ const team = [{
 
 const list = document.querySelector('.cards')
 
-
-for(let i in team ){
-    const colleghi = team[i]
-    console.log(colleghi);
-    console.log(colleghi.firstname);
-    console.log(colleghi.role);
-    console.log(colleghi.image);
-    for(let key in colleghi){
-        list.innerHTML += `
+for(let colleghi of team){
+    list.innerHTML += `
         <div>
         <img src='img/${colleghi.image}'></img>
+        <li>
         ${colleghi.firstname}<br>
-        ${colleghi.role}</div>
+        ${colleghi.role}
+        </li>
+        </div>
         `
-    }
-
-
 }
+
+
+
