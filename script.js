@@ -13,3 +13,12 @@ const team = [{
     age: '24',
     role: 'Front-End Developer'
 }]
+
+
+for(let i in team ){
+    const colleghi = team[i]
+    console.log(colleghi);
+    console.log(colleghi.firstname);
+    console.log(colleghi.age);
+    console.log(colleghi.role);
+}
